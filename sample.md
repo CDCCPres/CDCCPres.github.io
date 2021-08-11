@@ -1,6 +1,7 @@
 #This is a Sample Page
 
 My text goes here. And we can *all* see it.
+<h5>{{ site.minutes.label }}</h5>
 
 {% for minfile in site.minutes %}
   <h2>
