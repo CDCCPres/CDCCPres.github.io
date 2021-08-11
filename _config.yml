@@ -1,5 +1,17 @@
 theme: jekyll-theme-minimal
+
 collections_dir: my_collections
+
 collections:
   minutes:
     output: true
+    permalink: /:collection/:path/
+
+defaults:
+  # _minutes
+  - scope:
+      path: ""
+      type: minutes
+    values:
+      layout: minutes3
+      share: true
