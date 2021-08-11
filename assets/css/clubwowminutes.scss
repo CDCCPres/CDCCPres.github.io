@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Class Prefix of CWM: for ClubWow Minutes */
+/* cwm-body, cwm-phead, cwm-pheadleft, cwm-subject, cwm-item, cwm-link */
+/* How do we easily apply themes? */
+.cwm-main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+/*  font-size: 18px; */
+}
+.cwm-cnt-pageheader {
+  color: rgb(0,102,0);  /* or could use color:#006300; */
+}
+.cwm-ph-heading {
+  text-align: center;
+}
+.cwm-ph-cnt-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: small;
+}
+.cwm-phflex-itema {  margin: 0px 20px;}
+.cwm-phflex-itemb {
+  margin: 0px 20px;
+  text-align: right;
+}
+.cwm-h1 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cwm-cnt-attendees { font-size: small; margin-top: 10px; margin-bottom: 10px; }
+.cwm-row-attendees { display: flex; align-items: stretch; }
+.cwm-cel-attendees { border-bottom-style: solid; border-width: 1px; border-color: lightgrey; }
+.cwm-attend-col1 { font-weight: bold; }
+.cwm-attend-col2 { }
+.cwm-cnt-items {
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+}
+.cwm-item {
+  margin-top: 10px;
+  max-width: 550px;
+  width: 100%;
+/*  border: solid; */
+}
+.cwm-item-general {
+  /* Blue for General */
+  color: #fff;
+  background-color:#2196F3;
+}
+.cwm-item-report {
+  /* Green for Reports */
+  background-color:#4CAF50;
+  color:#fff;
+}
+.cwm-item-motion {
+  /* Orange for Motions */
+  color:#000;
+  background-color:#ff9800;
+}
+.cwm-card {
+  width: 100%;
+}
+.cwm-cnt-items .cwm-card {
+  /* Stuff that's only required when cards are inside the flex box. */
+  flex-grow: 1;
+}
+h2.cwm-h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+}
+h4 div {
+  padding:0px 5px;
+}
+.cwm-submit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-style: italic;
+}
+.cwm-submit div {
+  margin-left: 4px;
+}
+#by2 {
+  margin-right: 8px;
+  text-align: right;
+}
+table.cwm-tbl-submit {
+  width: 100%;
+}
+table.cwm-tbl-submit tr:first-of-type td {
+  font-style: italic;
+  text-align: left;
+}
+table.cwm-tbl-submit td { 
+  font-style: italic;
+  text-align: right;
+}
+
+/* Translate these classes :
+  w3-panel 
+  w3-leftbar 
+  w3-border-yellow
+  w3-pale-yellow */
+
+/* .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px} */
+/* .w3-leftbar{border-left:6px solid #ccc!important} */
+/* .w3-border-yellow,.w3-hover-border-yellow:hover{border-color:#ffeb3b!important} */
+/* .w3-pale-yellow,.w3-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important} */
+/* .w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+/* .w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#4CAF50!important} */
+
+.cwm-agenda {
+  font-style: italic;
+  white-space: pre-wrap;
+}
+.cwm-agenda-color {
+  border-color: #ffeb3b!important;  /* yellow, overrides panel colours */
+  background-color: #ffffcc; /* pale-yellow */
+  color:#000; /* text color to go with yellow background */
+}
+.cwm-discuss {
+ white-space: pre-wrap;
+}
+.cwm-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cwm-footer > a {
+  margin: 5px 10px;
+}
+.cwm-link {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: inline-block; /* So margins will work */
+  padding: 10px 20px;
+/*  margin: 40px 10px; */
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+/* Same colour schemes as cwm-item-GRM */
+.cwm-link-general {
+  /* Blue for General */
+  border-color: #2196F3;
+  color:#2196F3;
+}
+.cwm-link-general:hover {
+  /* Blue for General */
+  color: #fff;
+  background-color:#2196F3;
+}
+.cwm-link-report {
+  /* Green for Reports */
+  border-color:#4CAF50;
+  color:#4CAF50;
+}
+.cwm-link-report:hover {
+  /* Green for Reports */
+  background-color:#4CAF50;
+  color:#fff;
+}
+.cwm-link-motion {
+  /* Orange for Motions */
+  color:#ff9800;
+  border-color:#ff9800;
+}
+.cwm-link-motion:hover {
+  /* Orange for Motions */
+  color:#000;
+  background-color:#ff9800;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .cwm-phflex-itemb {text-align: left;}
+  #by2 {margin-left: 4px;margin-right: 0px;text-align: left;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Printing (A4, 725px-745px at an educated guess) */
+@media only screen and (min-width: 725px) and (max-width: 745px) {
+}
+
+@media only print {
+  /* Stuff in here when printing only. Not sure what, yet */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
