@@ -27,6 +27,11 @@ My text goes here. And we can *all* see it.
 
 <p>Minutes should appear here:<br>
 {% for minute in site.minutes %}
-  <li>{{ minute.content }}</li>
+  <li>{{ minute.relative_path }}</li>
+  Collection: {{ minute.collection }}<br>
+  Date: {{ minute.date }}<br>
+  Redenered Output: <p>{{ minute.output }}</p>
+    
+  Unrendered Content: <p>{{ minute.content }}</p>
 {% endfor %}
 </p>
