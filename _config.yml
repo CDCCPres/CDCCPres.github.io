@@ -13,5 +13,5 @@ defaults:
       path: ""
       type: minutes
     values:
-      layout: minutes3
+      layout: cdccminutes
       share: true
