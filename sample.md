@@ -16,7 +16,7 @@ My text goes here. And we can *all* see it.
 
 <p>Collections should appear here:<br>
 {% for minute in site.collections %}
-  <li>{{ minute.label }}</li>
+  <li>{{ minute.label }} - Output: {{ minute.output }} - Count: {{ minute.count }}</li>
 {% endfor %}
 </p>
 
