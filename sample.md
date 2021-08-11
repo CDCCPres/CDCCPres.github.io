@@ -15,6 +15,12 @@ My text goes here. And we can *all* see it.
 {% endfor %}
 
 <p>Collections should appear here:<br>
+{% for minute in site.collections %}
+  <li>{{ minute.label }}</li>
+{% endfor %}
+</p>
+
+<p>Minutes should appear here:<br>
 {% for minute in site.minutes %}
   <li>{{ minute.name }}</li>
 {% endfor %}
