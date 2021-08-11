@@ -5,16 +5,16 @@ title: Sample
 
 My text goes here. And we can *all* see it.
 
-{% for minfile in site.pages %}
-  <li>{{ minfile.collection }}</li>
+{% for page in site.pages %}
+  <li>{{ page.collection }}</li>
   <h2>
-    <a href="{{ minfile.url }}">
-      (( minfile.name }}
-    </a>
+    <a href="{{ page.url }}">(( page.name }}</a>
   </h2>
   <!-- <p>(( minfile.content | markdownify }}</p> -->
+
 {% endfor %}
-<p>
+
+<p>Collections should appear here:<br>
 {% for collection in site.collections %}
   <li>{{ collection.name }}</li>
 {% endfor %}
