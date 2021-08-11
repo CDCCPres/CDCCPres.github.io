@@ -1,2 +1,5 @@
 theme: jekyll-theme-minimal
 collections_dir: my_collections
+collections:
+  minutes:
+    output: true
