@@ -8,7 +8,7 @@ My text goes here. And we can *all* see it.
 {% for page in site.pages %}
   <li>{{ page.collection }}</li>
   <h2>
-    <a href="{{ page.url }}">(( page.name }}</a>
+    <a href="{{ page.url }}">{{ page.name }}</a>
   </h2>
   <!-- <p>(( minfile.content | markdownify }}</p> -->
 
