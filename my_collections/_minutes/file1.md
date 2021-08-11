@@ -1,6 +1,6 @@
 ---
-layout: default
+layout: cdccminutes
+date: 2021-04-02 00:00:00
 ---
-file1.md
 
-Does it look good?
+Does it look good? From: file1.md
