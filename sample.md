@@ -22,6 +22,6 @@ My text goes here. And we can *all* see it.
 
 <p>Minutes should appear here:<br>
 {% for minute in site.minutes %}
-  <li>{{ minute.name }}</li>
+  <li>{{ minute.content }}</li>
 {% endfor %}
 </p>
